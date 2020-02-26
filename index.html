@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Citipix</title>
+    <link
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="bg-image flex-column">
+    <header
+      class="flex-column align-items-center bg-color-lightGray color-white"
+    >
+      <h1 class="m-0 mt-1rem bold-900 font-size-36px">CitiPix</h1>
+      <p class="m-0 mt-05rem mb-1rem bold-700 font-size-20px">
+        | your cities, your pix |
+      </p>
+    </header>
+    <main class="flex-column align-items-center">
+      <form>
+        <select
+          onchange="changeImage();"
+          class="choseACity width-30rem mt-4rem p-05rem font-size-20px border-blue border-radius-3px outline-none"
+        >
+          <option selected value="Select a City">Select a City </option>
+          <option value="NYC">NYC</option>
+          <option value="SF">SF</option>
+          <option value="LA">LA</option>
+          <option value="ATX">ATX</option>
+          <option value="SYD">SYD</option>
+        </select>
+      </form>
+    </main>
+  </body>
+  <script src="js/main.js" type="text/javascript"></script>
+</html>
